@@ -1,0 +1,17 @@
+.footer {
+    min-height: 114px;
+    background-color: #118AB2;
+    padding: 45px 0 50px 0;
+    color: #fff;
+    .container {
+        height: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .subtitle {
+        font-family: Khula;
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 29px;
+    }
+}

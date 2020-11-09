@@ -1,0 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+@import './variables/variables';
+@import './base.scss';
+
+@import'./blocks/header/header';
+@import './blocks/preview/preview';
+@import './blocks/technologies/technologies';
+@import'./blocks/footer/footer';
+@import'./blocks/news/news';
+@import'./blocks/media/media';

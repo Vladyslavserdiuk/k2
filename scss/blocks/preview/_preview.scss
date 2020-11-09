@@ -1,0 +1,103 @@
+.preview {
+    display: flex;
+    background-color: #fff;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.07);
+    border-radius: 20px;
+}
+.tabheader {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    background-color: #fff;
+    border-radius:0px 20px 20px 0px;
+    h3 {
+        color: $dark;
+        font-weight: bold;
+        font-size: 36px;
+        line-height: 49px;
+        margin-bottom: 40px;
+        text-align: center;
+    }
+    &__sub {
+        margin: 12px;
+        text-align: center;
+        font-size: 16px;
+        line-height: 26px;
+    }
+    &__input {
+        margin-top: 30px;
+        width: 300px;
+        height: 50px;
+        padding: 0 20px;
+        outline: none;
+        border: 1px solid #7D7C83;
+        box-sizing: border-box;
+        border-radius: 5px;
+    }
+    &_login{
+        display: none;
+        margin-bottom: 0;
+        justify-content: center;
+        p {
+            margin-bottom: 30px;
+        }
+    }
+    &_registration {
+        display: none;
+        h3 {
+            margin: 0;
+        }
+        hr {
+            margin-top: 25px;
+            width: 73px;
+            height: 5px;
+            background: $primary;
+            border: 1px solid $primary;
+        }
+    }
+
+}
+.slider{
+    position: relative;
+        img {
+            border-radius:20px 0px 0px 20px;
+            object-fit: cover;
+            width: 100%;
+        }
+
+&__dots {
+    left: 45%;
+    top: 96%;
+    position: absolute;
+   
+  }
+  &__dots-item{
+    cursor: pointer;
+    height: 8px;
+    width: 22px;
+    margin: 0 2px;
+    background-color: #ddd;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .active,
+  &__dots-item:hover {
+    background-color: #aaa;
+  }
+
+&__item {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+@keyframes fade {
+    from {
+        opacity: 0.4
+    }
+    to {
+        opacity: 1
+    }
+}
+}

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>K2</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+<div class="container">
+    <header class="header">
+        <div class="header__left-block">
+            <div class="header__logo">
+                <img src="icons/Logo.png" alt="logo">
+            </div>
+        </div>
+        <nav class="header__links">
+            <a href="#news" class="header__link">Wiadomości</a>
+            <a href="#technologies" class="header__link">Technologie</a>
+        </nav>
+    </header>
+</div>
+
+<div class="container">
+    <div class="preview">
+        <div class="slider">
+            <div class="slider__item">
+                <img src="img/image_1.jpg" alt="first-slide">
+            </div>
+            <div class="slider__item">
+                <img src="img/image_1.jpg" alt="second-slide">
+            </div>
+            <div class="slider__item">
+                <img src="img/image_1.jpg" alt="third-slide">
+            </div>
+            <div class="slider__dots">
+                <span class="slider__dots-item" onclick="currentSlide(1)"></span>
+                <span class="slider__dots-item" onclick="currentSlide(2)"></span>
+                <span class="slider__dots-item" onclick="currentSlide(3)"></span>
+            </div>
+        </div>
+
+        <div id="form" class="tabheader">
+            <h3>Dzień dobry</h3>
+            <button id="btnLogin" class="btn">Zaloguj się</button>
+            <div class="tabheader__sub">lub</div>
+            <button id="btnRregistration" class="btn btn_dark">Zarejestruj się</button>
+        </div>
+
+        <div id="login" class="tabheader tabheader_login">
+            <h3>Zaloguj się</h3>
+            <input class="tabheader__input" placeholder="Login" type="text">
+            <input class="tabheader__input" placeholder="Hasło" type="password">
+            <p>
+                <label class="switch">
+                    <input type="checkbox" checked>
+                    <span class="slid"></span>
+                </label>
+                Zapamiętaj moją sesję
+            </p>
+            <button class="btn">Dalej</button>
+            <button class="btn btn_main">Nie mam konta</button>
+        </div>
+
+        <div id="registration" class="tabheader tabheader_registration">
+
+            <h3>Zarejestruj się</h3>
+
+            <input class="tabheader__input" placeholder="Login" type="text">
+            <input class="tabheader__input" placeholder="Hasło" type="password">
+
+            <hr>
+
+            <input class="tabheader__input" placeholder="Imię i nazwisko" type="text">
+            <input class="tabheader__input" placeholder="Adres e-mail" type="text">
+
+            <label class="square-input">Wyrażam zgodę na lorem ipsum lorem
+                <input type="checkbox" checked="checked">
+                <span class="checkmark"></span>
+            </label>
+
+            <button class="btn">Załóż konto</button>
+            <button class="btn btn_main">Chcę się zalogować</button>
+        </div>
+    </div>
+</div>
+
+<div id="news" class="news">
+    <div class="container">
+        <h2 class="title">Wiadomości</h2>
+        <div id='out' class="news__field">
+
+        </div>
+    </div>
+    <button class="btn-load" id="load">
+        Załaduj więcej
+        <img src="icons/load-right.svg" alt="btn-load">
+    </button>
+</div>
+
+<div id="technologies" class="technologies">
+    <h2 class="title">Nasze Technologie</h2>
+
+    <div class="technologies__field">
+
+        <div class="container">
+            <a class="technologies__item" href="https://webpack.js.org/">
+                <img src="icons/cib_webpack.svg" alt="icon_webpack" class="svg1">
+                <hr>
+                <h3 class="technologies__item-subtitle">Webpack</h3>
+            </a>
+
+            <a class="technologies__item" href="https://www.javascript.com/">
+                <img src="icons/cib_javascript.svg" alt="icon_javaScript" class="svg2">
+                <hr>
+                <h3 class="technologies__item-subtitle">JavaScript</h3>
+            </a>
+
+            <a class="technologies__item" href="https://www.npmjs.com/">
+                <img src="icons/cib_npm.svg" alt="icon_npm" class="svg3">
+                <hr>
+                <h3 class="technologies__item-subtitle">Node package Manager</h3>
+            </a>
+
+            <a class="technologies__item" href="https://html.spec.whatwg.org/">
+                <img src="icons/cib_html5.svg" alt="icon_html" class="svg4">
+                <hr>
+                <h3 class="technologies__item-subtitle">HTML</h3>
+            </a>
+        </div>
+    </div>
+</div>
+
+<footer class="footer">
+    <div class="container">
+        <div class="pepper">
+            <div class="subtitle">K2</div>
+        </div>
+    </div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>

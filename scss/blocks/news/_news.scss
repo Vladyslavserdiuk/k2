@@ -1,0 +1,60 @@
+.news { 
+    padding-top: 64px;
+    .title {
+        text-align: center;
+        font-weight: bold;
+        font-size: 36px;
+        color: $dark;
+    }
+    &__field {
+        padding-top: 29px;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    &__item {
+        margin: 5px;
+        width: 49%;
+        &-title{
+            img {
+                padding-right: 8px;
+                height: 39px;
+            }
+            display: flex;
+            font-weight: bold;
+            font-size: 24px;
+            line-height: 33px;
+            color: $dark;
+        }
+        &-date {
+            padding-top: 15px;
+            font-weight: normal;
+            font-size: 12px;
+            line-height: 16px;
+        }
+        &-img {
+            padding-top: 10px;
+            width: 100%;
+        }
+        &-text {
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 200%;
+            color: $dark;
+        }
+
+    }
+    .btn-load{
+        display: flex;
+        margin-left: 46.5%;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 22px;
+        text-align: center;
+        color: $primary;
+        border: none;
+        background: none;
+        cursor: pointer;
+    }
+
+}
